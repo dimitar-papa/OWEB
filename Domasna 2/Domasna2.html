@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+    <link rel="stylesheet" href="Domasna2.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 50px;
+            width: 275px;
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="get" action="">
+        <div style="display: flex; flex-direction: column; gap: 1rem; justify-content: center; align-items: center;">
+            <h1>Order pizza!</h1>
+
+            <div
+                style="display: flex; flex-direction: column; justify-content: center; margin-top: 25px; align-items: center;">
+                <label for="Pizza">
+                    <b>Select the pizza size:</b>
+                </label>
+
+                <div>
+                    <input type="radio" id="q1" name="q1" value="Big">
+                    <label for="q1">Big</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="q1" name="q1" value="Medium">
+                    <label for="q1">Medium</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="q1" name="q1" value="Small">
+                    <label for="q1">Small</label>
+                </div>
+            </div>
+
+
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <label for="Pizza">
+                    <b> Select the crust type: </b>
+                </label>
+
+                <select name="Crust" id="Crust">
+                    <option value="DeepDish">Deep Dish</option>
+                    <option value="Napolitan">Napolitan</option>
+                    <option value="Thick">Thick</option>
+                    <option value="Thin">Thin</option>
+                    <option value="New York style">New York style</option>
+                </select>
+            </div>
+
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <label for="Pizza">
+                    <b>Select the filler:</b>
+                </label>
+
+                <div>
+                    <input type="checkbox" id="filler1" name="filler1" value="Sausages">
+                    <label for="filler1">Sausages</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="filler2" name="filler2" value="Pepper">
+                    <label for="filler2">Pepper</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="filler1" name="filler2" value="Mushrooms">
+                    <label for="filler3">Mushrooms</label>
+                </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; justify-content: center; margin-bottom: 0px;">
+                <div>
+                    <label for="Name"><b>Name:</b></label>
+                    <input type="text" id="name" name="name" value="">
+                </div>
+                <div>
+                    <label for="Number"><b>Phone:</b></label>
+                    <input type="tel" id="number" name="nymber" value="">
+                </div>
+            </div>
+            <div style="margin-top: -15px;">
+                <textarea name="text">Message:</textarea>
+                <br>
+                <input type="submit" value="Send">
+                <input type="reset" value="Reset">
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>
