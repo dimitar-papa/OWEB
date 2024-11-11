@@ -1,0 +1,15 @@
+footer{
+    background-color: black;
+    color: lightslategray;
+    display: flex;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px;
+}
+.info{
+    margin-top: 50px;
+    margin-left: 250px;
+    display: flex;
+    flex-direction: column;
+}
